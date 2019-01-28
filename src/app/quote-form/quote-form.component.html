@@ -1,8 +1,12 @@
 <div class="container">
-  <p><em>here you can add a new quote with your Name</em></p>
+  <p>
+    <em><strong>here you can add a new quote with your Name</strong></em>
+  </p>
   <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="form-group">
-      <label for="name" required> Please Enter your Quote here: </label>
+      <label for="name" required>
+        <strong>Please Enter your Quote here: </strong></label
+      >
       <textarea
         class="form-control"
         id="name"
@@ -12,7 +16,9 @@
       ></textarea>
     </div>
     <div class="form-group">
-      <label for="author" required> This Author said that:</label>
+      <label for="author" required>
+        <strong>This is what Author said :</strong></label
+      >
       <input
         type="text"
         class="form-control"
@@ -25,7 +31,7 @@
       </div>
     </div>
     <div class="form-group">
-      <label for="fan" required>Written by:</label>
+      <label for="fan" required><strong>Written by:</strong></label>
       <input
         type="text"
         class="form-control"
