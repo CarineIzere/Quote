@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Designed by :
 
-CARINE iZERE
+CARINE IZERE
 
 ## Development server
 
