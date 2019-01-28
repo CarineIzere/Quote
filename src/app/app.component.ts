@@ -7,5 +7,5 @@ import { Quote } from "./quote";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  quotes = [new Quote(1, "carine", "carine", "mimi", 1, 0, new Date(2019))];
+  quotes = [new Quote(1, "", "", "", 1, 0, new Date(2019, 26, 1))];
 }
