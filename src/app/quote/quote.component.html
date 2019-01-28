@@ -13,13 +13,23 @@
         >
       </li>
       <button (click)="toggleDetails(i)" class="btn btn-info btn-xs">
-        <i class="fa fa-sort"></i></button
+        <i class="fa fa-sort">delete</i></button
       >&nbsp;
       <button (click)="upvote(i)" class="btn btn-primary btn-xs">
-        <i class="up"></i>{{ quote.upvotes }}</button
+        <i class="up"></i>{{ quote.upvotes }}
+        <img
+          src="https://i.redd.it/22uasph7vxvy.png"
+          height="40"
+          width="50"
+        /></button
       >&nbsp;&nbsp;
       <button (click)="downvote(i)" class="btn btn-danger btn-xs">
-        <i class="down"></i>{{ quote.downvotes }}
+        <i class="down"></i>{{ quote.downvotes
+        }}<img
+          src="https://i.kinja-img.com/gawker-media/image/upload/s--2_7dZuG2--/c_scale,f_auto,fl_progressive,q_80,w_800/oqg5yqock5hkhvoaswsz.jpg"
+          height="40"
+          width="50"
+        />
       </button>
       <app-quote-details
         *ngIf="quote.showAuthor"
