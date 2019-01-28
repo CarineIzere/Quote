@@ -7,8 +7,5 @@ import { Quote } from "./quote";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  quotes: string[];
-  constructor() {
-    this.quotes = ["Author", "what they say", "add or delete quotes"];
-  }
+  quotes = [new Quote(1, "carine", "carine", "mimi", 1, 0, new Date(2019))];
 }
