@@ -11,3 +11,11 @@ h1 {
 ul {
   color: aliceblue;
 }
+.btn btn-primary btn-xs {
+  background-image: ("https://i.redd.it/22uasph7vxvy.png");
+}
+.btn btn-danger btn-xs {
+  background-image: (
+    "https://i.kinja-img.com/gawker-media/image/upload/s--2_7dZuG2--/c_scale,f_auto,fl_progressive,q_80,w_800/oqg5yqock5hkhvoaswsz.jpg"
+  );
+}
