@@ -3,8 +3,8 @@
     <h1 id="title">WELCOME IN OUR QUOTES OF THE DAYS</h1>
   </div>
 
-  <ul>
-    <div *ngFor="let quote of quotes; let i = index" class="items">
+  <div *ngFor="let quote of quotes; let i = index" class="items">
+    <ul>
       <li id="listed">
         "{{ quote.name }}" -<em
           ><strong
@@ -16,17 +16,18 @@
         <i class="fa fa-sort"></i></button
       >&nbsp;
       <button (click)="upvote(i)" class="btn btn-primary btn-xs">
-        <i class="fa fa-thumbs-o-up"></i>{{ quote.upvotes }}</button
+        <i class="up"></i>{{ quote.upvotes }}</button
       >&nbsp;&nbsp;
       <button (click)="downvote(i)" class="btn btn-danger btn-xs">
-        <i class="fa fa-thumbs-o-down"></i>{{ quote.downvotes }}
+        <i class="down"></i>{{ quote.downvotes }}
       </button>
       <app-quote-details
         *ngIf="quote.showAuthor"
         [quote]="quote"
         (isComplete)="deleteQuote($event, i)"
       ></app-quote-details>
-    </div>
-  </ul>
+    </ul>
+  </div>
+
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

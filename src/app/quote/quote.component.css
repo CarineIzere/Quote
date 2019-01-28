@@ -6,6 +6,13 @@ h1 {
   text-align: center;
 }
 .items {
-  text-align: center;
-  border: 20px solid brown;
+  border: 3px solid brown;
+}
+.up {
+  background-image: ("https://i.redd.it/22uasph7vxvy.png");
+}
+.down {
+  background-image: (
+    "https://i.kinja-img.com/gawker-media/image/upload/s--2_7dZuG2--/c_scale,f_auto,fl_progressive,q_80,w_800/oqg5yqock5hkhvoaswsz.jpg"
+  );
 }

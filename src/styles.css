@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl2BZ06jcDmQMdDzSzrrHzhED2e77XXZFxaMXCCqhoYESWjCUg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.up {
+  background-image: ("https://i.redd.it/22uasph7vxvy.png");
+}
+.down {
+  background-image: (
+    "https://i.kinja-img.com/gawker-media/image/upload/s--2_7dZuG2--/c_scale,f_auto,fl_progressive,q_80,w_800/oqg5yqock5hkhvoaswsz.jpg"
+  );
+}
