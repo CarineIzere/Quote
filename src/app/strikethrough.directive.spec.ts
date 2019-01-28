@@ -1,8 +1,10 @@
-import { StrikethroughDirective } from './strikethrough.directive';
+import { Directive, ElementRef } from "@angular/core";
 
-describe('StrikethroughDirective', () => {
-  it('should create an instance', () => {
-    const directive = new StrikethroughDirective();
-    expect(directive).toBeTruthy();
-  });
-});
+@Directive({
+  selector: "[appStrikethrough]"
+})
+export class StrikethroughDirective {
+  constructor(private elem: ElementRef) {
+    this.elem.nativeElement.style.textDecoration = "line-through";
+  }
+}
