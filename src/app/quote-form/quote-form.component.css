@@ -3,3 +3,13 @@ form {
   color: cadetblue;
   text-align: justify;
 }
+.footer {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: brown;
+  color: white;
+  text-align: center;
+}

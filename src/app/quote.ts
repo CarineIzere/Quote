@@ -10,7 +10,7 @@ export class Quote {
     public downvotes: number,
     public notedDate: Date
   ) {
-    this.showAuthor = false;
-    this.showFan = false;
+    // this.showAuthor = false;
+    // this.showFan = false;
   }
 }

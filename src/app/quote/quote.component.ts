@@ -24,7 +24,7 @@ export class QuoteComponent implements OnInit {
       "Ernest",
       0,
       0,
-      new Date(2019, 1, 26)
+      new Date(2019, 1, 27)
     ),
     new Quote(
       3,
@@ -33,7 +33,7 @@ export class QuoteComponent implements OnInit {
       "Roosevelt",
       0,
       0,
-      new Date(2019, 1, 26)
+      new Date(2018, 10, 1)
     )
   ];
   toggleDetails(index) {
