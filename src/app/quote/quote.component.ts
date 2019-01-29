@@ -44,7 +44,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].upvotes++;
   }
   downvote(index) {
-    this.quotes[index].downvotes++;
+    this.quotes[index].downvotes--;
   }
   deleteQuote(isComplete, index) {
     if (isComplete) {
