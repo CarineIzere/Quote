@@ -4,47 +4,40 @@
   </p>
   <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="form-group">
-      <label for="name" required>
-        <strong>Please Enter your Quote here: </strong></label
-      >
+      <label for="name"> <strong>Please Enter your Quote here: </strong></label>
       <textarea
         class="form-control"
         id="name"
         rows="4"
         [(ngModel)]="newQuote.name"
         name="name"
+        required
       ></textarea>
     </div>
     <div class="form-group">
-      <label for="author" required>
-        <strong>This is what Author said :</strong></label
-      >
+      <label for="author"> <strong>This is what Author said :</strong></label>
       <input
         type="text"
         class="form-control"
         id="author"
         [(ngModel)]="newQuote.author"
         name="name"
+        required
       />
-      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-        <p><em>Name is Required</em></p>
-      </div>
     </div>
     <div class="form-group">
-      <label for="fan" required><strong>Written by:</strong></label>
+      <label for="fan"><strong>Written by This Fan:</strong></label>
       <input
         type="text"
         class="form-control"
         id="fan"
         [(ngModel)]="newQuote.fan"
         name="name"
+        required
       />
-      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-        <p><em>Name is Required</em></p>
-      </div>
     </div>
     <div class="form-group">
-      <label for="complete"><strong> Completion Date</strong></label>
+      <label for="complete" required><strong> Completion Date</strong></label>
       <input
         type="date"
         id="complete"
@@ -53,15 +46,9 @@
         #completeDate="ngModel"
         required
       />
-      <div
-        [hidden]="completeDate.valid || completeDate.pristine"
-        class="alert alert-danger"
-      >
-        <p><em>Completion Date is Required</em></p>
-      </div>
     </div>
-    <button type="submit" id="go">Add quote</button>
-    <button type="submit" id="back">add multiple quote</button>
+    <button type="submit" id="go" required>Add quote</button>
+    <button type="submit" id="back" required>add multiple quote</button>
   </form>
 </div>
 <div class="footer">
