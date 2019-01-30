@@ -8,7 +8,7 @@ export class Quote {
     public fan: string,
     public upvotes: number,
     public downvotes: number,
-    public notedDate: Date
+    public completeDate: Date
   ) {
     // this.showAuthor = false;
     // this.showFan = false;
