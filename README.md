@@ -6,6 +6,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 CARINE IZERE
 
+## Description
+
+Those are quotes that will repeat words or a reference number used by someone else Read more: http://www.businessdictionary.com/definition/quote.html
+
+## Live demo
+
+To see how the project is designed please visit : https://carineizere.github.io/Quote/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
